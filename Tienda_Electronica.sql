@@ -67,6 +67,7 @@ GO
 
 -- Entidad Detalle
 CREATE TABLE Detalle (
+    Id_Detalle INT IDENTITY(1,1) PRIMARY KEY,
     Id_Carrito INT NOT NULL,
     Id_Producto INT NOT NULL,
     CONSTRAINT FK_Detalle_Carrito FOREIGN KEY (Id_Carrito) 
